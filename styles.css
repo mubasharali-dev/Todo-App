@@ -1,0 +1,136 @@
+body {
+  font-family: sans-serif;
+  /* background-color: #f5f5f5; */
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(166, 161, 181, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  margin: 0.5em;
+}
+.logo h3 {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 6em;
+}
+span {
+  /* color: blue; */
+}
+
+.todo-list {
+  max-width: 500px;
+  margin: 1em auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.todo-item label {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.todo-item input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.edit-button,
+.delete-button {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.edit-button {
+  margin-right: 4em;
+  color: blue;
+}
+.delete-button {
+  color: red;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+form input[type="text"] {
+  width: 75%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+form button {
+  width: 25%;
+  padding: 10px;
+  font-size: 18px;
+  margin: 0.5em;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #3e8e41;
+}
+footer {
+  /* background-color: #333; */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
